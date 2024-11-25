@@ -2,11 +2,11 @@
 
 ## Overview
 
-This assignment focuses on abstracting Pthread-based parallelism in C++ using a header-only library called `SimpleMultithreader`. By leveraging C++11 lambda expressions, this library simplifies the usage of multi-threading in C++ programs. The main objective is to reduce the complexity traditionally associated with parallelizing algorithms using Pthreads.
+This assignment focuses on abstracting Pthread-based parallelism in C++ using a header-only library called `SimpleMultithreader`. By leveraging C++11 lambda expressions, this library simplifies multi-threading usage in C++ programs. The main objective is to reduce the complexity traditionally associated with parallelizing algorithms using Pthreads.
 
 ## Files Included
 
-1. **simple-multithreader.h** - Header file containing the implementation of the `SimpleMultithreader` class.
+1. **simple-multithreader.h** - Header file containing the `SimpleMultithreader` class implementation.
 2. **matrix.cpp** - Demonstrates the use of `SimpleMultithreader` for matrix multiplication.
 3. **vector.cpp** - Demonstrates the use of `SimpleMultithreader` for vector addition.
 4. **Makefile** - Provides the necessary commands to compile the programs with proper linking.
@@ -38,7 +38,7 @@ To run the matrix multiplication program:
 ```
 
 - `numThreads`: Number of threads to use for the calculation.
-- `matrixSize`: Size of the matrix (e.g., 1024 for a 1024x1024 matrix).
+- `matrixSize`: Matrix size (e.g., 1024 for a 1024x1024 matrix).
 
 ### Vector Addition
 
@@ -53,11 +53,7 @@ To run the vector addition program:
 
 ## Implementation Details
 
-`SimpleMultithreader` utilizes raw Pthreads and manages their lifecycle within each function call to `parallel_for`. It supports both single and two-dimensional loop parallelism. This implementation avoids the use of advanced C++ threading features to keep the abstraction simple and focused on demonstrating basic parallel execution.
-
-## Evaluation
-
-Your implementation will be tested using the provided example programs (`matrix.cpp` and `vector.cpp`). Ensure not to modify these examples as the evaluation will use identical copies to verify the correctness and performance of your implementation.
+`SimpleMultithreader` utilizes raw Pthreads and manages their lifecycle within each function call to `parallel_for`. It supports both single and two-dimensional loop parallelism. This implementation avoids using advanced C++ threading features to simplify the abstraction and focuses on demonstrating essential parallel execution.
 
 ## Students
 
