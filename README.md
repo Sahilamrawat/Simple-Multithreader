@@ -22,7 +22,7 @@ This assignment focuses on abstracting Pthread-based parallelism in C++ using a 
 To compile the programs, use the provided Makefile:
 
 ```bash
-make all
+make
 ```
 
 This command will compile both `matrix.cpp` and `vector.cpp` using the settings defined in the Makefile.
